@@ -40,6 +40,7 @@ dependencies:
   firebase_core: ^2.4.1
   firebase_storage: ^11.0.10
   cloud_firestore: ^4.3.1
+  proste_bezier_curve: ^2.0.2
 
 dev_dependencies:
   flutter_test:

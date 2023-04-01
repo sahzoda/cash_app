@@ -50,48 +50,46 @@ class _SignUpPageState extends State<SignUpPage> {
             child: Form(
               key: _formKey,
               child: Column(children: [
-                Center(
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 100),
+                Container(
+                  // padding: const EdgeInsets.all(32.0),
+                  height: 280.0,
+                  width: 900,
+
+                  //color: const Color(0xffDC1C17),
+                  //color: const Color(0xffFFAB91),
+                  decoration: new BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: new BorderRadius.only(
+                          bottomLeft: const Radius.circular(105.0),
+                          bottomRight: const Radius.circular(105.0))
+                          ),
+                  child: Center(
                     child: Image.asset(
                       "assets/images/photo.png",
-                      height: 200,
+                      // height: 200.0,
+                      // width: 900,
                     ),
                   ),
                 ),
-                SizedBox(
-            height: 90,
-                ),
+            SizedBox(
+              height: 90,
+            ),
+               
                 // Padding(
-                //   padding: const EdgeInsets.only(left: 5),
-                //   child: Text(
-                //     "Введите ваш персональный Логин ",
-                //     style: TextStyle(
-                //         fontWeight: FontWeight.w900, fontSize: 20),
+                //   padding: const EdgeInsets.all(10.0),
+                //   child: Row(
+                //     children: [
+                //       Text(
+                //         "Подтвердите что вы являетесь админом ",
+                //         style: TextStyle(fontWeight: FontWeight.w900, fontSize: 20),
+                //       ),
+                //     ],
                 //   ),
                 // ),
-                // SizedBox(
-                //   height: 20,
-                // ),
-                // Padding(
-                //   padding: const EdgeInsets.only(right: 20, left: 20),
-                //   child: Container(
-                //     width: 400,
-                //     height: 45,
-                //     decoration: BoxDecoration(
-                //         color: Colors.grey.shade300,
-                //         borderRadius: BorderRadius.circular(15)),
-                //     child: Row(
-                //       children: [
-                //         Text(
-                //           'Логин',
-                //           style: TextStyle(
-                //               fontSize: 20, color: Colors.grey.shade800),
-                //         ),
-                //       ],
-                //     ),
-                //   ),
-                // ),
+            //      SizedBox(
+            //   height: 8,
+            // ),
+                
 
                 Padding(
                   padding: const EdgeInsets.all(10),
@@ -104,8 +102,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   ),
                 ),
 
-              
-                 Padding(
+                Padding(
                   padding: const EdgeInsets.all(10),
                   child: TextField(
                     decoration: InputDecoration(
@@ -116,9 +113,8 @@ class _SignUpPageState extends State<SignUpPage> {
                   ),
                 ),
 
-                
                 SizedBox(
-                  height: 100,
+                  height: 120,
                 ),
                 Container(
                   decoration: BoxDecoration(
